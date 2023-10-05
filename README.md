@@ -28,20 +28,13 @@
 - **모델 예측 프로그램**
   - 학습된 모델을 활용하여 다양한 시나리오의 배출량 변화를 예측하는 시스템으로 구성되어 있습니다.
 
-### Installation:
-
 ## 🚀 Installation
 
-1. GitHub에서 프로젝트를 클론하세요:
-   git clone https://github.com/asthtls/FineDust_Concentration_Prediction_Program-GUI-.git
-
-프로젝트 디렉토리로 이동:
-bash
-cd FineDust_Concentration_Prediction_Program-GUI-
-
-bash
+1. **Clone this repo:**
+```
+git clone https://github.com/asthtls/FineDust_Concentration_Prediction_Program-GUI-.git
 pip install -r requirements.txt
-
+```
    
 ## 🤝 Contribution
 이 프로젝트는 연구실 대학원에서 진행되었으며, 저는 데이터 전처리부터 GUI 디자인, 학습 알고리즘 적용까지 전반적인 개발을 담당하였습니다.
