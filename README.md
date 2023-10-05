@@ -30,10 +30,18 @@
 
 ### Installation:
 
+## 🚀 Installation
+
 1. GitHub에서 프로젝트를 클론하세요:
    git clone https://github.com/asthtls/FineDust_Concentration_Prediction_Program-GUI-.git
-   cd FineDust_Concentration_Prediction_Program-GUI-
-   pip install -r requirements.txt
+
+프로젝트 디렉토리로 이동:
+bash
+cd FineDust_Concentration_Prediction_Program-GUI-
+
+bash
+pip install -r requirements.txt
+
    
 ## 🤝 Contribution
 이 프로젝트는 연구실 대학원에서 진행되었으며, 저는 데이터 전처리부터 GUI 디자인, 학습 알고리즘 적용까지 전반적인 개발을 담당하였습니다.
