@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="Tab">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>661</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="tab_1">
+     <attribute name="title">
+      <string>x_data_variables</string>
+     </attribute>
+     <widget class="QListWidget" name="xtrain_list">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>131</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::MultiSelection</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>x데이터의 특성</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="ytrain_list">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>70</y>
+        <width>131</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::MultiSelection</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>10</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>y데이터의 특성</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="x_selected_view">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>70</y>
+        <width>131</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::MultiSelection</enum>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="y_selected_view">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>70</y>
+        <width>131</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::MultiSelection</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="x_right_btn">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>400</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>right</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="x_left_btn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>400</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>left</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y_right_btn">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>410</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>right</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y_left_btn">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>410</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>left</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>data_method</string>
+     </attribute>
+     <widget class="QRadioButton" name="all_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>100</y>
+        <width>130</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>전체 데이터</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="zero_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>190</y>
+        <width>241</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0을 제외한 전체 데이터</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="cell_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>280</y>
+        <width>261</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0을 제외한 cell 데이터</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="cell_radio_btn_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>360</y>
+        <width>261</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0을 제외한 cell 데이터 3x3</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>choose_train_method</string>
+     </attribute>
+     <widget class="QRadioButton" name="linear_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>100</y>
+        <width>130</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>선형회귀</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="kernel_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>190</y>
+        <width>130</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>커널회귀</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="tree_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>300</y>
+        <width>130</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>트리회귀</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="dnn_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>140</y>
+        <width>130</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>DNN</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="random_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>360</y>
+        <width>151</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>랜덤포레스트</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rnn_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>210</y>
+        <width>130</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RNN</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="lstm_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>280</y>
+        <width>130</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LSTM</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="neural_regression_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>430</y>
+        <width>130</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>신경망회귀</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="gauss_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>130</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>가우스회귀</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="gru_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>360</y>
+        <width>130</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>GRU</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="conv1_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>430</y>
+        <width>130</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>cnn</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>50</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>회귀</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>60</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>딥러닝</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="svr_radio_btn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>130</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SVR</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>model_store</string>
+     </attribute>
+     <widget class="QPushButton" name="model_store_btn">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>50</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>모델 이름 </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exit_btn">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>430</y>
+        <width>91</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>실행</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="model_name">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>110</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="model_btn">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>170</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>GET TEXT</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
